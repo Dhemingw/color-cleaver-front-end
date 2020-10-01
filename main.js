@@ -8,9 +8,15 @@ const isValidSecondary = require('./is-valid-secondary.js')
 const color1 = process.argv[2]
 const color2 = process.argv[3]
 
-if (color1 === undefined) {
-    console.log( 'color1 is undefined');
+if(color1 == isValidPrimary(color)) {
+    console.log('yes it is')
 }
-if (color2 === undefined) {
-    console.log( 'color2 is undefined');
-}
+
+// if (color1 === undefined) {
+//     console.log( 'colors are undefined');
+// }
+// if (color2 === undefined) {
+
+// } else {
+//     return 'hi'
+// }
